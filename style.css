@@ -1,6 +1,6 @@
 
 
-/* hour counter: 7hr */
+/* hour counter: 12hr */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
@@ -9,26 +9,6 @@
     padding: 0px;
 }
 
-@media only screen and (max-width: 600px) {
-    .pageLayout {
-      grid-template-columns: 100% !important;
-      grid-template-rows: auto;
-    }
-    .loginArea {
-      flex-direction: column;
-      align-items: center;
-    }
-    .form-container {
-      margin: 20px;
-    }
-    .imgFluid {
-        width: 100%;
-    }
-    form {
-        width: 100% !important;
-        background-color: var(--background);
-    }
-}
 
 :root {
     --text-base: #afb6c2;
@@ -105,7 +85,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--form-background);
+    /* background-color: var(--form-background); */
     padding: 20px;
     border-radius: 5px;
     width: 350px;
@@ -198,4 +178,36 @@ button {
   
 button:hover {
     background-color: rgba(255, 198, 50, 0.8);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .pageLayout {
+      grid-template-columns: 100% ;
+      grid-template-rows: auto;
+    }
+    .loginArea {
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-container {
+      margin: 20px;
+    }
+    .imgFluid {
+        display: none;
+    }
+    form {
+        width: 100% ;
+    }
+    .color {
+        background-color: var(--background) ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .loginArea {
+        display: block;
+    }
+    .header {
+        margin-left: 10px;
+    }
 }
