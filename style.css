@@ -9,6 +9,27 @@
     padding: 0px;
 }
 
+@media only screen and (max-width: 600px) {
+    .pageLayout {
+      grid-template-columns: 100% !important;
+      grid-template-rows: auto;
+    }
+    .loginArea {
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-container {
+      margin: 20px;
+    }
+    .imgFluid {
+        width: 100%;
+    }
+    form {
+        width: 100% !important;
+        background-color: var(--background);
+    }
+}
+
 :root {
     --text-base: #afb6c2;
     --text-title: #d4ccb6;
@@ -84,7 +105,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #24221f;
+    background-color: var(--form-background);
     padding: 20px;
     border-radius: 5px;
     width: 350px;
